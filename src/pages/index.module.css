@@ -1,0 +1,473 @@
+/* ============ 首屏 ============ */
+.hero {
+  position: relative;
+  overflow: hidden;
+  background: #0d1512;
+  display: grid;
+  align-items: center;
+  min-height: calc(100vh - var(--ifm-navbar-height));
+  color: #fff;
+}
+
+.heroMedia {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  pointer-events: none;
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(10, 16, 13, 0.9) 0%,
+    rgba(10, 16, 13, 0.78) 55%,
+    rgba(13, 21, 18, 0.92) 100%
+  );
+  pointer-events: none;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 1;
+  width: min(1100px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 110px 0 90px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+  gap: 56px;
+  align-items: center;
+  color: #fff;
+}
+
+.heroTextCol {
+  min-width: 0;
+}
+
+.heroCopy {
+  max-width: 760px;
+}
+
+.kicker {
+  color: #93b5a4;
+  font-size: 0.92rem;
+  font-weight: 700;
+  margin: 0 0 12px;
+}
+
+.heroTitle {
+  color: #fff;
+  font-size: clamp(2.8rem, 6vw, 4.6rem);
+  line-height: 1.05;
+  margin: 0;
+  font-weight: 800;
+}
+
+.heroText {
+  color: #d9e2dc;
+  font-size: clamp(1rem, 1.5vw, 1.15rem);
+  line-height: 1.85;
+  margin: 22px 0 0;
+  max-width: 640px;
+}
+
+.heroBody {
+  margin-top: 48px;
+  max-width: 640px;
+}
+
+.heroLead {
+  margin: 0 0 8px;
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+.heroLeadText {
+  margin: 0;
+  color: #c2cfc7;
+  font-size: 0.98rem;
+  line-height: 1.7;
+}
+
+.heroActions {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+
+.primaryAction,
+.glassAction {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  font-weight: 700;
+  min-height: 48px;
+  padding: 0 26px;
+  text-decoration: none !important;
+}
+
+.primaryAction {
+  background: var(--ifm-color-primary);
+  color: #fff !important;
+}
+
+.primaryAction:hover {
+  background: var(--ifm-color-primary-dark);
+  color: #fff !important;
+}
+
+.glassAction {
+  border: 1px solid #3a4a41;
+  color: #fff !important;
+}
+
+.glassAction:hover {
+  background: #1a2720;
+  color: #fff !important;
+}
+
+.quickLinks {
+  display: flex;
+  gap: 18px;
+  margin-top: 22px;
+}
+
+.quickLinks a {
+  color: #9ab5a6;
+  font-size: 0.92rem;
+  font-weight: 700;
+  text-decoration: none !important;
+}
+
+.quickLinks a:hover {
+  color: #fff;
+}
+
+.heroMeta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+.heroMeta span {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid #2a3a31;
+  border-radius: 999px;
+  color: #b9c9c0;
+  font-size: 0.85rem;
+  padding: 6px 12px;
+}
+
+.heroLogoCol {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroLogo {
+  width: 100%;
+  max-width: 340px;
+  height: auto;
+}
+
+/* ============ 通用区块 ============ */
+.section {
+  width: min(1100px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 56px 0 64px;
+}
+
+.sectionHeader {
+  margin-bottom: 28px;
+  max-width: 760px;
+}
+
+.sectionKicker {
+  color: var(--ifm-color-primary);
+  font-size: 0.92rem;
+  font-weight: 700;
+  margin: 0 0 12px;
+}
+
+.sectionTitle {
+  font-size: clamp(1.7rem, 3.2vw, 2.4rem);
+  line-height: 1.15;
+  margin: 0;
+  font-weight: 800;
+}
+
+.sectionDesc {
+  color: var(--ifm-color-emphasis-700);
+  display: block;
+  font-size: 1.02rem;
+  line-height: 1.7;
+  margin-top: 14px;
+}
+
+.featureGrid,
+.galleryGrid,
+.noticeGrid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+/* ============ 怎么玩（功能卡） ============ */
+.featureCard {
+  display: block;
+  background: var(--ifm-card-background-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 4px;
+  color: var(--ifm-font-color-base);
+  padding: 24px;
+  text-decoration: none !important;
+}
+
+.featureCard:hover {
+  border-color: var(--ifm-color-emphasis-400);
+  text-decoration: none !important;
+}
+
+.featureCard h3 {
+  font-size: 1.1rem;
+  margin: 0 0 10px;
+}
+
+.featureCard p {
+  color: var(--ifm-color-emphasis-700);
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ============ 去哪里玩（世界卡） ============ */
+.worldGrid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.worldCard {
+  background: var(--ifm-card-background-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 4px;
+  color: var(--ifm-font-color-base);
+  padding: 22px;
+  text-decoration: none !important;
+}
+
+.worldCard:hover {
+  border-color: var(--ifm-color-emphasis-400);
+  text-decoration: none !important;
+}
+
+.worldTag {
+  background: #e8f4ed;
+  border-radius: 999px;
+  color: #155f3d;
+  display: inline-flex;
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  padding: 4px 10px;
+}
+
+.worldCard h3 {
+  font-size: 1.12rem;
+  margin: 0 0 10px;
+}
+
+.worldCard p {
+  color: var(--ifm-color-emphasis-700);
+  line-height: 1.7;
+  margin: 0;
+}
+
+.inlineLink {
+  display: inline-flex;
+  margin-top: 24px;
+  color: var(--ifm-color-primary);
+  font-weight: 700;
+  text-decoration: none !important;
+}
+
+/* ============ 服务器一览（画廊） ============ */
+.gallerySlot {
+  background: var(--ifm-card-background-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.gallerySlot img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+}
+
+.galleryBody {
+  padding: 20px 22px 24px;
+}
+
+.galleryNum {
+  align-items: center;
+  background: #e8f4ed;
+  border: 1px solid #1f6f4a3d;
+  border-radius: 4px;
+  color: #174b34;
+  display: inline-flex;
+  font-weight: 700;
+  height: 34px;
+  justify-content: center;
+  margin-bottom: 14px;
+  width: 34px;
+}
+
+.gallerySlot strong {
+  display: block;
+  font-size: 1.15rem;
+  margin-bottom: 8px;
+}
+
+.gallerySlot p {
+  color: var(--ifm-color-emphasis-700);
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ============ 规则与手册（通告卡） ============ */
+.noticeCard {
+  display: block;
+  background: var(--ifm-card-background-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 4px;
+  color: var(--ifm-font-color-base);
+  padding: 24px;
+  text-decoration: none !important;
+}
+
+.noticeCard:hover {
+  border-color: var(--ifm-color-emphasis-400);
+  text-decoration: none !important;
+}
+
+.noticeCard h3 {
+  font-size: 1.1rem;
+  margin: 0 0 10px;
+}
+
+.noticeCard p {
+  color: var(--ifm-color-emphasis-700);
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ============ 网页地图横幅 ============ */
+.mapBand {
+  width: min(1100px, calc(100% - 40px));
+  margin: 0 auto 64px;
+  background: #14271d;
+  border-radius: 4px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  justify-content: space-between;
+  padding: 34px;
+}
+
+.mapBand h2 {
+  margin: 0 0 8px;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.mapBand p {
+  margin: 0;
+  color: #c5d4cc;
+  line-height: 1.7;
+  max-width: 560px;
+}
+
+.mapActions {
+  display: flex;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.actionButton {
+  align-items: center;
+  background: transparent;
+  border: 1px solid #3a4a41;
+  border-radius: 4px;
+  color: #fff !important;
+  display: inline-flex;
+  font-weight: 700;
+  gap: 10px;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 18px;
+  text-decoration: none !important;
+}
+
+.actionButton:hover {
+  background: #1a2720;
+  color: #fff !important;
+}
+
+/* ============ 深色模式微调 ============ */
+[data-theme='dark'] .worldTag,
+[data-theme='dark'] .galleryNum {
+  background: #58b97d29;
+  color: #8fe0ad;
+}
+
+/* ============ 响应式 ============ */
+@media screen and (max-width: 996px) {
+  .heroContent {
+    grid-template-columns: 1fr;
+    padding: 72px 0 56px;
+  }
+  .heroLogoCol {
+    order: -1;
+  }
+  .heroLogo {
+    max-width: 220px;
+  }
+  .section {
+    padding: 54px 0;
+  }
+  .featureGrid,
+  .galleryGrid,
+  .noticeGrid {
+    grid-template-columns: 1fr;
+  }
+  .worldGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .mapBand {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+  }
+  .mapActions {
+    width: 100%;
+  }
+  .actionButton {
+    flex: 1;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .worldGrid {
+    grid-template-columns: 1fr;
+  }
+  .quickLinks {
+    flex-wrap: wrap;
+  }
+}
