@@ -40,7 +40,7 @@ Epoch MC 成立于 2026 年 7月，是一款以 **1:50 真实地球**为地图�
 2. **获取整合包**：在 QQ 群文件中下载官方整合包，按说明完成安装
 3. **进入游戏**：启动整合包，连接服务器地址，开始游戏
 
-<div className="notice-important">
+<div className="notice-warning">
 
 **进服注册**：首次进入服务器，请先输入 `/register <密码> <确认密码>` 注册账号；后续每次进服输入 `/login <密码>` 登录。
 
@@ -52,7 +52,7 @@ Epoch MC 成立于 2026 年 7月，是一款以 **1:50 真实地球**为地图�
 - ▸ 卫星地图：[http://epochearth.cn:11451/](http://epochearth.cn:11451/)
 - ▸ 国家股市：[http://epochearth.cn:54754/](http://epochearth.cn:54754/)
 
-<div className="notice-important">
+<div className="notice-warning">
 
 **重要提醒**：请务必通过官方 QQ 群获取整合包与最新信息，谨防非官方渠道。我们无法对非官方平台产生的纠纷负责。
 

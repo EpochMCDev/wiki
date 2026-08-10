@@ -11,6 +11,9 @@
 # Brainstorming companion artifacts
 .superpowers
 
+# 服务器插件配置包（含敏感信息，不入库）
+plug.zip
+
 # Misc
 .DS_Store
 .env.local

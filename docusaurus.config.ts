@@ -38,7 +38,7 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'Epoch MC',
+      title: 'Epoch MC Wiki',
       logo: {
         alt: 'Epoch MC',
         src: 'img/logo.png',

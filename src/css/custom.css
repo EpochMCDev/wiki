@@ -88,6 +88,10 @@
   background: #f2c84b29;
 }
 
+.notice-warning p {
+  margin: 0 0 10px;
+}
+
 .notice-warning p:last-child {
   margin-bottom: 0;
 }
