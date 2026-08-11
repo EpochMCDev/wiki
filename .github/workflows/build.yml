@@ -48,7 +48,7 @@ jobs:
 
       - name: Package build artifacts
         run: |
-          cd dist
+          cd build
           zip -r ../build-v${{ env.VERSION }}.zip .
           cd ..
 
