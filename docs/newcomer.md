@@ -109,7 +109,7 @@ sidebar_position: 1
 - [**附魔与强化**](/docs/guide/enhance)：附魔书、装备强化、合金套。
 - [**钓鱼**](/docs/guide/fishing)：稀有度、鱼饵与钓鱼比赛。
 - [**烹饪与种植**](/docs/guide/cooking)：厨房烹饪与作物种植。
-- [**交易与市场**](/docs/guide/market)：箱子商店与全球市场。
+- [**箱子商店**](/docs/guide/market)：手持物品左键箱子即可开店。
 - [**服务器规则**](/docs/rules/overview)：完整规则全文。
 - [**常见问题 FAQ**](/docs/faq)：进服常见问题解答。
 - [**更新日志**](/docs/changelog)：查看版本更新记录。

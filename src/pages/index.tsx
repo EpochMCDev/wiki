@@ -335,7 +335,7 @@ export default function Home(): ReactNode {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Welcome to ${siteConfig.title}`}
+      title={`欢迎来到 ${siteConfig.title}`}
       description="Epoch MC 国战服务器玩家手册">
       <HomepageHeader />
       <HomepageBody />
