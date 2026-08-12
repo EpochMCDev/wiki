@@ -1,6 +1,6 @@
 ---
 title: 重生机制
-sidebar_position: 0
+sidebar_position: 1
 ---
 
 # 重生机制

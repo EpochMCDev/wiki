@@ -1,6 +1,6 @@
 ---
 title: 菜单
-sidebar_position: 1
+sidebar_position: 0
 ---
 
 # 菜单
