@@ -311,9 +311,9 @@ function HomepageBody() {
           </p>
         </div>
         <div className={styles.mapActions}>
-          <a
+          <a>
             className={styles.actionButton}
-            href="http://epochearth.cn:11451/"
+            href="http://map.epochmc.cn/"
             target="_blank"
             rel="noopener noreferrer">
             打开网页地图
