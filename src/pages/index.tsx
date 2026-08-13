@@ -315,7 +315,7 @@ function HomepageBody() {
             className={styles.actionButton}
             href="http://map.epochmc.cn/"
             target="_blank"
-            rel="noopener noreferrer">
+            rel="noopener noreferrer"
             打开网页地图
           </a>
           <a
